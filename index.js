@@ -20,7 +20,9 @@ const timer = new Timer(durationInput, startBtn, pauseBtn, {
         circle.setAttribute('stroke-dashoffset', perimeter * timeRemaining / duration - perimeter);
     },
     onComplete() {
-        completedText.classList.add('show');
+        if (!completedText.classList.contains("show")) {
+            completedText.classList.add('show');
+        }
     }
 });
 

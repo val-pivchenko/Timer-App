@@ -28,9 +28,9 @@ class Timer {
     };
 
     reset = () => {
+        completedText.classList.remove('show');
         this.durationInput.value = 0;
         circle.setAttribute('stroke-dashoffset', this.perimeter);
-        completedText.classList.remove('show');
     };
 
     tick = () => {
