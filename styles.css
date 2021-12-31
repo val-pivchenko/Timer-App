@@ -1,0 +1,95 @@
+
+html {
+    height: 100vh;
+}
+
+.dial {
+    height: 400px;
+    width: 400px;
+  }
+  
+  .timer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  * {
+    font: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: black;
+    background: linear-gradient(180deg, rgba(157,0,0,.5) 0%, rgba(50,109,255,.5) 100%);;
+    font-family: 'Segoe UI', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+      font-size: 3rem;
+  }
+
+  .completedText {
+      position: absolute;
+      top: 1rem;
+      left: 5rem;
+      display: none;
+      font-size: 2rem;
+  }
+
+  .show {
+      display: block;
+  }
+  
+  .timer input {
+    display: block;
+    border: none;
+    width: 240px;
+    font-size: 90px;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    caret-color: rgba(0,0,0,0);
+  }
+
+  .timer input::-webkit-outer-spin-button,
+  .timer input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+  .timer button {
+    color: black;
+    background: transparent;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  .timer button:focus {
+    outline: none;
+  }
+  
+  .timer input:focus {
+    outline: none;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
